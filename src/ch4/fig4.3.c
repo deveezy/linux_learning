@@ -9,7 +9,7 @@
 // 	for (i = 1; i < argc; i++) 
 //     {
 // 		printf("%s: ", argv[i]);
-// 		if (lstat(argv[i], &buf) < 0) 
+// 		if (stat(argv[i], &buf) < 0) 
 //         {
 // 			err_ret("lstat error");
 // 			continue;
