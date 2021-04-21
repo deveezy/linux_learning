@@ -29,6 +29,12 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch5/fig5.13_temp_file.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch5/fig5.15.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch5/yt_io/bin_out.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch5/yt_io/mem_print.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch5/yt_io/write_to_file.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch5/yt_io/file_rw_b.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch5/yt_io/struct_serialize_json_simple.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch5/yt_io/read_array_struct.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch5/yt_io/dir_list.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
