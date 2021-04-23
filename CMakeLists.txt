@@ -35,6 +35,11 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch5/yt_io/struct_serialize_json_simple.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch5/yt_io/read_array_struct.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch5/yt_io/dir_list.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch6/time_demo.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch7/fig7.9_cmd_process.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch7/fig7.11_set_jmp.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch7/long_jump.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch7/fig7.13.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)

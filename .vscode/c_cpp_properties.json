@@ -12,7 +12,8 @@
                 "_UNICODE"
             ],
             "intelliSenseMode": "linux-clang-x64",
-            "configurationProvider": "ms-vscode.cmake-tools"
+            "cStandard": "c99",
+            "cppStandard": "c++17"
         }
     ],
     "version": 4
