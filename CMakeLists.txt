@@ -40,6 +40,12 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch7/fig7.11_set_jmp.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch7/long_jump.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch7/fig7.13.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.1.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.6.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.8.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.12.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.16.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/proc_unix_yt/wait_ex.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)

@@ -8,7 +8,10 @@
         "sstream": "c",
         "iosfwd": "c",
         "istream": "cpp",
-        "cstdio": "cpp"
+        "cstdio": "cpp",
+        "signal.h": "c",
+        "siginfo_t.h": "c",
+        "condition_variable": "c",
+        "mutex": "c"
     },
-    "terminal.integrated.shell.windows": "cmd.exe"
 }
