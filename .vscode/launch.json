@@ -7,12 +7,13 @@
             "request": "launch",
             "program": "${command:cmake.launchTargetPath}",
             "preLaunchTask": "Build C++ project",
-            "args": ["10.0", "20.0", "13.0"],
+            "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "MIMode": "gdb",
-            "miDebuggerPath": "/usr/bin/gdb",
+            // "miDebuggerPath": "/usr/bin/gdb",
+            "externalConsole": false,
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",

@@ -45,7 +45,15 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.8.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.12.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.16.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.22.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.28.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.29.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.30.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/fig8.31.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/dup2.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/incorrect_fork.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/proc_unix_yt/wait_ex.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/exercises/8.7.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)

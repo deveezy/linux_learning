@@ -3,8 +3,22 @@
 
 // char* env_init[] = { "USER=unknown", "PATH=/tmp", NULL };
 
+// void print_env()
+// {
+// 	int i;
+// 	char** ptr;
+// 	extern char** environ;
+
+// 	for (ptr = environ; *ptr != 0; ++ptr)
+// 	{
+// 		printf("%s\n", *ptr);
+// 	}
+// }
+
 // int main(void)
 // {
+// 	uid_t uid = getuid();
+// 	gid_t eid = getegid();
 // 	pid_t	pid;
 
 // 	if ((pid = fork()) < 0) 
