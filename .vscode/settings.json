@@ -12,6 +12,8 @@
         "signal.h": "c",
         "siginfo_t.h": "c",
         "condition_variable": "c",
-        "mutex": "c"
+        "mutex": "c",
+        "stdlib.h": "c",
+        "stddef.h": "c"
     },
 }
