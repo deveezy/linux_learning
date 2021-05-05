@@ -54,6 +54,7 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/incorrect_fork.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/proc_unix_yt/wait_ex.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/exercises/8.7.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch9/fig9.12.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/cool_examples/cache_friendly_malloc.c
 )
 

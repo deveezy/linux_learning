@@ -1,15 +1,14 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
+              { 
             "name": "C++ Debug (gdb)",
             "type": "cppdbg",
             "request": "launch",
             "program": "${command:cmake.launchTargetPath}",
-            "preLaunchTask": "Build C++ project",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/build",
             "environment": [],
             "MIMode": "gdb",
             "miDebuggerPath": "/usr/bin/gdb",
