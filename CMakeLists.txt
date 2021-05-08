@@ -56,6 +56,15 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch8/exercises/8.7.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch9/fig9.12.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/cool_examples/cache_friendly_malloc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.2.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.5.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.7.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.8.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.10.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.11.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps2.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps_signals.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
