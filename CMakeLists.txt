@@ -4,7 +4,7 @@ set(proj LearningLinux)
 project(${proj} C)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
+set(CMAKE_C_STANDARD 99)
 set(HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/include/apue.h)
 
 set(SRC 
@@ -62,6 +62,8 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.8.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.10.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.11.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.12.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.15.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps2.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps_signals.c

@@ -10,7 +10,11 @@
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE",
-                "__USE_POSIX"
+                "__USE_MISC",
+                "__USE_POSIX",
+                "_USE_POSIX",
+                "USE_POSIX",
+                "_POSIX_C_SOURCE"
             ],
             "intelliSenseMode": "linux-clang-x64",
             "cStandard": "c99",
