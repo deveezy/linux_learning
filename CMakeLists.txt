@@ -70,6 +70,12 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps2.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps_signals.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/1_basic_signal.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/2_pause_hangs.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/3_intr_malloc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/4_sigprocmask.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/5_sigaction_info.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/6_sigaction_mask.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)

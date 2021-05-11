@@ -10,13 +10,9 @@
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE",
-                "__USE_MISC",
-                "__USE_POSIX",
-                "_USE_POSIX",
-                "USE_POSIX",
-                "_POSIX_C_SOURCE"
+                "_GNU_SOURCE"
             ],
-            "intelliSenseMode": "linux-clang-x64",
+            "intelliSenseMode": "linux-gcc-x64",
             "cStandard": "c99",
             "cppStandard": "c++17"
         }
