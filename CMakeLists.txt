@@ -12,6 +12,7 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/error.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/pathalloc.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/prmask.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/tellwait.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/dup2.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/mycat.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch4/fig4.3.c
@@ -67,6 +68,13 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.15.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.18.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.20.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.22.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.23.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.25.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.26.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.28.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.29.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.31.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps2.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps_signals.c
@@ -76,6 +84,7 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/4_sigprocmask.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/5_sigaction_info.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/6_sigaction_mask.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/9_sigsuspend.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)

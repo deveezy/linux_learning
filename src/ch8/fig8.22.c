@@ -18,13 +18,13 @@
 // 		status = -1;	/* probably out of processes */
 // 	} 
 //   else if (pid == 0) 
-//   {				
+//   {
 //     /* child */
 // 		execl("/bin/sh", "sh", "-c", cmdstring, (char *)0);
 // 		_exit(127);		/* execl error */
 // 	} 
 //   else 
-//   {							
+//   {
 //     /* parent */
 // 		while (waitpid(pid, &status, 0) < 0) 
 //     {
@@ -40,6 +40,6 @@
 
 // int main(int argc, const char** argv)
 // {
-//   system("ls -l");
+//   system("ls -lah");
 //   return 0;
 // }
