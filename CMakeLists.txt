@@ -4,8 +4,11 @@ set(proj LearningLinux)
 project(${proj} C)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 11)
 set(HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/include/apue.h)
+
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread")
 
 set(SRC 
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
@@ -75,6 +78,7 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.28.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.29.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/10.31.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/test_sigprocmask.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps2.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/jumps_signals.c
@@ -85,6 +89,13 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/5_sigaction_info.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/6_sigaction_mask.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/sys_prog/9_sigsuspend.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/exercises/e2.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/exercises/e6.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch10/exercises/e12.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch11/demo.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch11/11.2.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch11/11.3.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch11/11.4.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)

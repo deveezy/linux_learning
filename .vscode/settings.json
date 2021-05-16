@@ -14,6 +14,11 @@
         "condition_variable": "c",
         "mutex": "c",
         "stdlib.h": "c",
-        "stddef.h": "c"
+        "stddef.h": "c",
+        "algorithm": "c",
+        "memory": "c",
+        "new": "c",
+        "numeric": "c",
+        "utility": "c"
     },
 }

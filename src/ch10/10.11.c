@@ -13,7 +13,7 @@
 // 		err_sys("signal(SIGALRM) error");
 
 // 	if (setjmp(env_alrm) != 0)
-// 		err_quit("read timeout");
+// 		err_quit("read timeout"); 
 
 // 	alarm(10);
 
