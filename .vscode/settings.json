@@ -19,6 +19,9 @@
         "memory": "c",
         "new": "c",
         "numeric": "c",
-        "utility": "c"
+        "utility": "c",
+        "*.tcc": "c",
+        "random": "c",
+        "streambuf": "c"
     },
 }
