@@ -22,6 +22,9 @@
         "utility": "c",
         "*.tcc": "c",
         "random": "c",
-        "streambuf": "c"
+        "streambuf": "c",
+        "stdbool.h": "c",
+        "futex.h": "c",
+        "unistd.h": "c"
     },
 }

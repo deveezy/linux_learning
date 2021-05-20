@@ -9,6 +9,8 @@ set(HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/include/apue.h)
 
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -D_GNU_SOURCE")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pedantic")
 
 set(SRC 
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
@@ -104,6 +106,21 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch11/11.15.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch11/11.16.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch11/heapsort.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch12/12.8.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch12/12.13.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch12/12.16.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/1_clone.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/clone.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/4_not_atomic.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/6_bad_lock.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/7_spin_lock.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/8_futex.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/10_cthreads_1.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/11_cthread_bad_detach.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/12_cthread_detach.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/simple_condvar.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/gcc_thread.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/thread_stacks.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
