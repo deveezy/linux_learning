@@ -18,6 +18,8 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/pathalloc.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/prmask.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/tellwait.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/setfl.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/clrfl.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/dup2.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/mycat.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch4/fig4.3.c
@@ -109,6 +111,11 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch12/12.8.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch12/12.13.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch12/12.16.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch12/12.17.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch13/fig13.1.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch13/fig13.7.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch13/daemonize.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch14/fig14.1.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/1_clone.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/clone.h
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/4_not_atomic.c
@@ -121,6 +128,7 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/simple_condvar.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/gcc_thread.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/thread_stacks.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/users/set_userid.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
