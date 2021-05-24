@@ -1,4 +1,4 @@
-#include "apue.h"
+#include <apue.h>
 #include <errno.h>		/* for definition of errno */
 #include <stdarg.h>		/* ISO C variable aruments */
 
@@ -24,7 +24,6 @@ void err_ret(const char *fmt, ...)
 void err_sys(const char *fmt, ...)
 {
 	va_list		ap;
-
 	va_start(ap, fmt);
 	err_doit(1, errno, fmt, ap);
 	va_end(ap);
