@@ -19,6 +19,7 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/prmask.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/tellwait.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/setfl.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/openmax.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/clrfl.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/locktest.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/lockreg.c
@@ -121,7 +122,13 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch14/fig14.1.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch14/fig14.7.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch14/fig14.12.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch14/fig14.27.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch14/demo.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.5.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.6.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.7.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.11.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.12.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/1_clone.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/clone.h
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/4_not_atomic.c
@@ -138,6 +145,13 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/advio/1_nonblock.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/advio/2_flock.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/advio/3_fcntl_lock.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/proc/3_fs_proc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/proc/4_shared_mem.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/proc/10_pipe.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/proc/11_advanced_pipe.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/proc/12_exec.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/proc/pipe_simulating.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/proc/multiple_pipes.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
