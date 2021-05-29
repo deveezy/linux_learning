@@ -25,6 +25,8 @@
         "streambuf": "c",
         "stdbool.h": "c",
         "futex.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "ostream": "c",
+        "sched.h": "c"
     },
 }

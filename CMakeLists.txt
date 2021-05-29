@@ -10,7 +10,9 @@ set(HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/include/apue.h)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -D_GNU_SOURCE")
+# set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pedantic")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address")
 
 set(SRC 
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
@@ -129,6 +131,8 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.7.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.11.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.12.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.14.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.18.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/1_clone.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/clone.h
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/4_not_atomic.c
@@ -152,6 +156,9 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/proc/12_exec.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/proc/pipe_simulating.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/proc/multiple_pipes.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/1_simple_sort.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/3_mem_sort.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/test_mem.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
