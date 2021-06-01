@@ -11,7 +11,7 @@ set(HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/include/apue.h)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -D_GNU_SOURCE")
 # set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2")
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pedantic")
+# set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pedantic")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address")
 
 set(SRC 
@@ -159,6 +159,10 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/1_simple_sort.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/3_mem_sort.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/test_mem.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/5_key_t.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/6_msg_get.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/8_sem.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/11_shm.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
