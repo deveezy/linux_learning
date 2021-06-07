@@ -12,7 +12,7 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -D_GNU_SOURCE")
 # set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2")
 # set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pedantic")
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address")
+# set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address")
 
 set(SRC 
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
@@ -26,6 +26,8 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/locktest.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/lockreg.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/lockfile.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/setfd.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/spipe.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/dup2.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/mycat.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch4/fig4.3.c
@@ -120,7 +122,6 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch12/12.17.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch13/fig13.1.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch13/fig13.7.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch13/daemonize.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch14/fig14.1.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch14/fig14.7.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch14/fig14.12.c
@@ -133,6 +134,16 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.12.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.14.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ch15/fig15.18.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch16/clcconn.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch16/connect_oriented_client.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch16/connect_oriented_server.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch16/initserver.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch17/serv_listen.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch17/serv_accept.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch17/open.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch17/open.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch18/fig18.10.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ch18/ttyname.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/1_clone.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/clone.h
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/threads/4_not_atomic.c
@@ -163,6 +174,12 @@ set(SRC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/6_msg_get.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/8_sem.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/11_shm.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/12_sem_posix.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/13_sockpair.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/14_sock_dgram.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/ipc/15_sock_server.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/8_net/2_getaddrinfo.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sys_prog/8_net/3_client.c
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)

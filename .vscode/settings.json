@@ -27,6 +27,9 @@
         "futex.h": "c",
         "unistd.h": "c",
         "ostream": "c",
-        "sched.h": "c"
+        "sched.h": "c",
+        "uio.h": "c",
+        "un.h": "c",
+        "netdb.h": "c"
     },
 }
